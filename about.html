@@ -31,6 +31,41 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         /* Chỉnh kích thước Carousel */
+#courseCarousel {
+    max-width: 800px; /* Giới hạn chiều rộng */
+    margin: 20px auto; /* Căn giữa */
+}
+
+/* Chỉnh kích thước ảnh bên trong Carousel */
+#courseCarousel .carousel-item img {
+    width: 80%;  /* Hình ảnh full chiều rộng */
+    height: 60%; /* Chiều cao cố định */
+    object-fit: cover; /* Cắt ảnh để vừa khung */
+    border-radius: 10px; /* Bo góc ảnh */
+}
+
+/* Hiệu ứng hover */
+#courseCarousel .carousel-item img:hover {
+    transform: scale(1.02); /* Phóng to nhẹ khi rê chuột */
+    transition: 0.3s ease-in-out;
+}
+
+/* Nút điều hướng */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Đổi màu nút sang trắng */
+    width: 5%;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+    #courseCarousel .carousel-item img {
+        height: 500px; /* Giảm chiều cao trên điện thoại */
+    }
+}
+
+      </style>
    </head>
    <body>
       <!-- header section start -->
@@ -118,6 +153,34 @@
             </div>
          </div>
       </div>
+      <div class="container">
+      </br> </br>
+         <h2 class="text-center">Hình ảnh trong khóa học</h2>
+         <div id="courseCarousel" class="carousel slide" data-ride="carousel">
+             <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img src="images/docs.png" class="d-block w-100" alt="Khóa học TOEIC">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="images/minhhoa02.png" class="d-block w-100" alt="Học viên TOEIC">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="images/minhhoa01.png" class="d-block w-100" alt="Lớp học TOEIC">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="images/docs.png" class="d-block w-100" alt="Buổi học TOEIC">
+                 </div>
+             </div>
+             <a class="carousel-control-prev" href="#courseCarousel" role="button" data-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Previous</span>
+             </a>
+             <a class="carousel-control-next" href="#courseCarousel" role="button" data-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Next</span>
+             </a>
+         </div>
+     </div>
       <!-- about section end -->
       <!-- footer section start -->
       <div class="footer_section margin_top90">
