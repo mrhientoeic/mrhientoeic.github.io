@@ -921,6 +921,51 @@ button.owl-next {
     margin-top: 90px;
 }
 
+.accordion .card {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.accordion .card-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.accordion .btn-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.accordion .btn-link:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+/* Nút Zalo & Messenger */
+.chat-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chat-btn {
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.chat-btn img {
+    width: 40px;
+    height: 40px;
+}
 /* copyright section end */
 

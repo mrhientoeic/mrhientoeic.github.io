@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>About</title>
+      <title>Lộ trình</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -75,10 +75,44 @@
             <div class="about_main">
                <div class="row">
                   <div class="col-sm-12">
-                     <h1 class="about_taital">About Our dance studio</h1>
-                     <p class="about_text">English. Many desktop publishing <br>packages and web page editors now use Lorem Ipsum as their default model text, and a search </p>
+                     <h1 class="about_taital">Lộ trình khóa học tại MR HIỀN TOEIC</h1>
+                     <div class="accordion" id="courseAccordion">
+
+                        <!-- Danh sách các mục -->
+                        <script>
+                            const topics = [
+                                "DANH TỪ", "TÍNH TỪ + TRẠNG TỪ", "CẤU TRÚC CÂU ĐƠN",
+                                "CÁC THÌ THƯỜNG GẶP TRONG TIẾNG ANH (TOEIC)", "CÂU CHỦ ĐỘNG, CÂU BỊ ĐỘNG", 
+                                "CÂU ĐIỀU KIỆN", "TO V, V-ing", "PHÂN TỪ (ADJ-ing/ADJ-ed)",
+                                "LIÊN TỪ", "GIỚI TỪ", "ĐẠI TỪ QUAN HỆ, MỆNH ĐỀ QUAN HỆ",
+                                "RGMĐQH", "HÒA HỢP SV", "Kỹ năng làm dạng bài PART 01", "Kỹ năng làm dạng bài PART 02",
+                                "Kỹ năng làm dạng bài PART 03", "Kỹ năng làm dạng bài PART 04", "GIẢI ĐỀ"
+                            ];
+                
+                            document.write(`
+                                ${topics.map((topic, index) => `
+                                    <div class="card">
+                                        <div class="card-header" id="heading${index}">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse${index}" aria-expanded="false" aria-controls="collapse${index}">
+                                                    ${index + 1}. ${topic}
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#courseAccordion">
+                                            <div class="card-body">
+                                                Nội dung phần "${topic}" sẽ được cập nhật.
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            `);
+                        </script>
+                
+                    </div>
+                    
                      <div class="about_img"><img src="images/about-img.png"></div>
-                     <p class="about_text_1">using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                     <p class="about_text_1">us</p>
                      <div class="readmore_bt"><a href="#">Read More</a></div>
                   </div>
                </div>
