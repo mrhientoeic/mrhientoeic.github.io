@@ -480,7 +480,7 @@ button.owl-next {
 
 .image_box {
     width: 100%;
-    background-color: #252525;
+    background-color: #a0993c;
     border-radius: 100%;
     margin: 0 auto;
     text-align: center;
@@ -511,11 +511,12 @@ button.owl-next {
 }
 
 .about_text {
-    width: 100%;
-    font-size: 14px;
+    width: 80%;
+    font-size: 17px;
     color: #252525;
     margin: 0px;
-    text-align: center;
+    padding-left: 250px;
+    /* text-align: center; */
 }
 
 .about_text_1 {
