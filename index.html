@@ -54,6 +54,47 @@
               transform: translateY(0);
           }
       }
+      .about_section {
+        padding: 40px 20px;
+    }
+
+    .about_taital {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .about_text {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+        color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about_taital {
+            font-size: 24px;
+        }
+
+        .about_text {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about_taital {
+            font-size: 22px;
+        }
+
+        .about_text {
+            font-size: 15px;
+            text-align: left;
+        }
+    }
   </style>
    <body>
       <!-- header section start -->
@@ -153,22 +194,21 @@
       <!-- about section start -->
       <div class="about_section layout_padding">
          <div class="container">
-            <div class="about_main">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <h1 class="about_taital">THÔNG TIN NGƯỜI HƯỚNG DẪN</h1>
-                     <p class="about_text">- Mình sẽ trực tiếp hướng đẫn </br>
-                        - ĐÃ TỰ HỌC TOEIC TỪ 230 điểm trong gần 4 năm, đạt điểm số /990 TOEIC. </br>
-                        - Đã có chứng chỉ nghiệp vụ sư phạm dành cho GV DH/CĐ </br>
-                        - Đã từng hướng dẫn các bạn SV đạt mục tiêu TOEIC ra trường và các bạn đã đi làm tại các công ty công nghệ,...</br>
+             <div class="about_main">
+                 <div class="row justify-content-center">
+                     <div class="col-lg-10 col-md-12">
+                         <h1 class="about_taital">THÔNG TIN NGƯỜI HƯỚNG DẪN</h1>
+                         <p class="about_text">
+                             - Mình sẽ trực tiếp hướng dẫn. <br>
+                             - ĐÃ TỰ HỌC TOEIC TỪ 230 điểm trong gần 4 năm, đạt điểm số /990 TOEIC. <br>
+                             - Đã có chứng chỉ nghiệp vụ sư phạm dành cho GV DH/CĐ. <br>
+                             - Đã từng hướng dẫn các bạn SV đạt mục tiêu TOEIC ra trường và các bạn đã đi làm tại các công ty công nghệ,...
                          </p>
-                     <!-- <div class="about_img"><img src="images/about-img.png"></div> -->
-                     <!-- <div class="readmore_bt"><a href="#">Xem thêm</a></div> -->
-                  </div>
-               </div>
-            </div>
+                     </div>
+                 </div>
+             </div>
          </div>
-      </div>
+     </div>
       <!-- about section end -->
       <!-- price section start -->
       <div class="price_section layout_padding">
