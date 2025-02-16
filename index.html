@@ -33,6 +33,28 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
+   <style>
+      .quote-container {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #dee4de; /* Màu chữ nổi bật */
+          opacity: 0;
+          animation: fadeIn 2s forwards;
+      }
+  
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+              transform: translateY(10px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+  </style>
    <body>
       <!-- header section start -->
       <div class="header_section">
@@ -123,58 +145,7 @@
       <div class="service_section layout_padding">
          <div class="container">
             <h1 class="service_taital">Các khóa học tại MR HIỀN TOEIC</h1>
-            <div class="service_section_2 layout_padding">
-               <div class="owl-carousel owl-theme">
-                  <div class="item">
-                     <div class="image_box">
-                        <!-- <img src="images/img-1.png" alt="#" /> -->
-                        <h3 class="sound_text">TOEIC H2 650+</h3>
-                     </div>
-                     <div class="buy_bt"><a href="detail-course.html">Xem chi tiết </a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box"> 
-                        <!-- <img src="images/img-2.png" alt="#" /> -->
-                        <h3 class="sound_text">TOEIC H3 (1GV:1HV)</h3>
-                     </div>
-                     <div class="buy_bt"><a href="detail-course.html">Xem chi tiết </a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <!-- <img src="images/course011.png" alt="#" /> -->
-                        <h3 class="sound_text">TOEIC H1 450+</h3>
-                     </div>
-                     <div class="buy_bt"><a href="detail-course.html">Xem chi tiết </a></div>
-                  </div>
-                  <!-- <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Rock <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Rock <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-2.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Hip Hop <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="item">
-                     <div class="image_box">
-                        <img src="images/img-1.png" alt="#" />
-                     </div>
-                     <h3 class="sound_text">Style <br>Dance</h3>
-                     <div class="buy_bt"><a href="#">Read More</a></div>
-                  </div> -->
-               </div>
+            <p class="quote-container">"Đừng chờ đợi sự hoàn hảo mới bắt đầu, hãy bắt đầu với những gì chúng ta có."</p>
             </div>
          </div>
       </div>
