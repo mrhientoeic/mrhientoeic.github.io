@@ -54,15 +54,20 @@
               transform: translateY(0);
           }
       }
-   .banner_section {
-    background-image: url('images/banner-img-hien.png');
-    background-size: cover;
-    background-position: center;
-    height: 500px; /* Điều chỉnh chiều cao phù hợp */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+      
+      .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* text-align: center; */
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+   }
       
   </style>
    <body>
@@ -121,11 +126,14 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-md-12">
                         <h1 class="about_taital">THÔNG TIN NGƯỜI HƯỚNG DẪN</h1>
-                        <div class="about_text_1">
-                            <p>Đã tự học TOEIC từ 230 điểm trong gần 4 năm, đạt điểm số /990 TOEIC.</p>
-                            <p>Đã có chứng chỉ NGHIỆP VỤ SƯ PHẠM về giảng dạy</p>
-                            <p>Đã từng hướng dẫn các bạn SV đạt mục tiêu TOEIC ra trường và các bạn đã đi làm tại các công ty công nghệ.</p>
-                        </div>
+                        <div class="about_text_1 card ">
+                           <!-- <img class="avatar" src="images/hien-mentor.png" alt="John Doe"> -->
+                           <p> <span style="color: black;">MR HIỀN TRỰC TIẾP HƯỚNG DẪN</span> </p>
+                           <p>Đã tự học TOEIC từ 230 điểm trong gần 4 năm, đạt điểm số /990 TOEIC.</p>
+                           <p>Đã có chứng chỉ NGHIỆP VỤ SƯ PHẠM về giảng dạy</p>
+                           <p>Đã từng hướng dẫn các bạn SV đạt mục tiêu TOEIC ra trường và các bạn đã đi làm tại các công ty công nghệ.</p>
+                           <!-- <a href="#" class="btn">View Profile</a> -->
+                       </div>
                     </div>
                 </div>
             </div>
