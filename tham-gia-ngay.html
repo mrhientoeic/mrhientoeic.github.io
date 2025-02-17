@@ -37,6 +37,12 @@
              border-radius: 5px;
              margin-top: 10px;
          }
+         .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Khoảng cách giữa 2 QR code */
+         }
+
          .qr-code {
              text-align: center;
              margin-top: 10px;
@@ -118,14 +124,19 @@
                 <p><strong>THÔNG TIN CHUYỂN KHOẢN:</strong></p>
                 <p><strong>BIDV:</strong> 314 2653 717</p>
                 <p><strong>Techcombank:</strong> 1903 8021 1300 18</p>
-                <p><strong>HỌ TÊN:</strong> NGUYỄN THANH HIỀN</p>
+                <p><strong>CHỦ TÀI KHOẢN:</strong> NGUYỄN THANH HIỀN</p>
                 <p><strong>NỘI DUNG:</strong> HỌ TÊN + HOC TOEIC</p>
             </div>
-        
+         <div class="qr-container">
             <div class="qr-code">
                 <p><strong>Mã QR chuyển khoản:</strong></p>
                 <img src="images/qrcode_bidv.png" alt="Mã QR Thanh Toán">
             </div>
+            <div class="qr-code">
+               <p><strong>Mã QR MoMo:</strong></p>
+               <img src="images/qrcode_momo.png" alt="Mã QR Momo">
+           </div>
+         </div>
         
             <h3>Quy định nghỉ học & bảo lưu</h3>
             <ul>
